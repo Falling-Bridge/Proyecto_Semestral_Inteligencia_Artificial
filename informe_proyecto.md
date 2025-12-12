@@ -8,6 +8,7 @@
 - [Instrucciones de uso](#instrucciones-de-uso)
 - [Resultados](#resultados)
 - [Conclusiones](#conclusiones)
+- [Referencias](#Referencias)
 
 ---
 
@@ -207,6 +208,8 @@ Se creó una base de datos con 50.000 datos conteniendo las características des
 
 ## Instrucciones de uso
 
+Antes de explicar como funciona, el código *agente_q_learning.py* no es ejecutado en ningún momento, pero los demás modelos lo utilizan como base.
+
 El funcionamiento de los códigos descritos posteriormente no es automático una vez desencadenado el primer paso, sino que cada uno debe ejecutarse una vez concluida la ejecución del paso anterior:
 
 1. **generador_pacientes.py**: Es el encargado de crear la base de datos con las características descritas anteriormente en ‘Características seleccionadas’, en donde se crearán 50.000 pacientes dentro de las variaciones descritas previamente.
@@ -261,3 +264,42 @@ Si quiso aplicar la opción para un plan personalizado para un paciente específ
 
 --- 
 # Conclusiones
+
+Es plenamente factible desarrollar un agente basado en Q-Learning capaz de generar planes de administración de insulina para pacientes con diabetes tipo 1.
+
+Aunque el proyecto presentó ciertas dificultades —particularmente mi comprensión inicial sobre las diferencias entre un modelo de reinforcement learning y uno de supervised learning— esto me llevó a crear y ajustar una base de datos que, si bien terminó teniendo un uso mínimo, resultó igualmente valiosa. Su elaboración me permitió investigar en profundidad el dominio del problema y establecer los límites y condiciones necesarias para orientar de manera efectiva el diseño y funcionamiento del modelo de Q-Learning.
+
+---
+# Referencias
+
+HbA1c
+- American Diabetes Association. (2024). Standards of medical care in diabetes—2024. Diabetes Care, 47(Supplement 1), S1-S332. https://doi.org/10.2337/dc24-SINT
+Glucosa en ayunas y posprandial
+Battelino, T., Danne, T., Bergenstal, R. M., Amiel, S. A., Beck, R., Biester, T., ... & Phillip, M. (2019). Clinical targets for continuous glucose monitoring data interpretation: Recommendations from the international consensus on time in range. Diabetes Care, 42(8), 1593-1603. https://doi.org/10.2337/dci19-0028
+
+Dosis de insulina y ratios
+- Danne, T., Nimri, R., Battelino, T., Bergenstal, R. M., Close, K. L., DeVries, J. H., ... & Phillip, M. (2017). International consensus on use of continuous glucose monitoring. Diabetes Care, 40(12), 1631-1640. https://doi.org/10.2337/dc17-1600
+
+Ratio insulina/carbohidrato y factor de sensibilidad
+- Walsh, J., Roberts, R., Bailey, T., & Poole, J. (2018). Guidelines for insulin dosing in continuous subcutaneous insulin infusion using new formulas from a retrospective study of individuals with optimal glucose levels. Journal of Diabetes Science and Technology, 12(2), 343-348. https://doi.org/10.1177/1932296818757799
+
+Raciones de carbohidratos y control glucémico
+- Bell, K. J., Smart, C. E., Steil, G. M., Brand-Miller, J. C., King, B., & Wolpert, H. A. (2015). Impact of fat, protein, and glycemic index on postprandial glucose control in type 1 diabetes: Implications for intensive diabetes management in the continuous glucose monitoring era. Diabetes Care, 38(6), 1008-1015. https://doi.org/10.2337/dc15-0100
+
+tablas WHO/CDC
+- Centers for Disease Control and Prevention. (n.d.). WHO growth charts are recommended for use in the U.S. for infants and children 0 to 2 years of age. Retrieved [December 12, 2024], from https://www.cdc.gov/growthcharts/who-charts.html
+
+Clasificación y diagnóstico de diabetes
+- American Diabetes Association. (2023). 2. Classification and diagnosis of diabetes: Standards of Care in Diabetes—2023. Diabetes Care, 46(Supplement 1), S19–S40. https://doi.org/10.2337/dc23-S002
+
+Sensibilidad a la insulina
+- Bergman, R. N., Ider, Y. Z., Bowden, C. R., & Cobelli, C. (1979). Quantitative estimation of insulin sensitivity. American Journal of Physiology-Endocrinology and Metabolism, 236(6), E667–E677. https://doi.org/10.1152/ajpendo.1979.236.6.E667
+
+Simulación en diabetes tipo 1
+- Dalla Man, C., Micheletto, F., Lv, D., Breton, M., Kovatchev, B., & Cobelli, C. (2014). The UVA/PADOVA Type 1 Diabetes Simulator: New features. Journal of Diabetes Science and Technology, 8(1), 26–34. https://doi.org/10.1177/1932296813514502
+
+Control glucémico mediante aprendizaje por refuerzo
+- Fox, I., Wiens, J., & Goldberg, A. (2019). Deep reinforcement learning for closed-loop blood glucose control. Proceedings of the AAAI Conference on Artificial Intelligence, 33, 7005–7013. https://doi.org/10.1609/aaai.v33i01.33017005
+
+Modelos predictivos de glucosa
+- Hovorka, R., Canonico, V., Chassin, L. J., Haueter, U., Massi-Benedetti, M., Orsini Federici, M., Pieber, T. R., Schaller, H. C., Schaupp, L., Vering, T., & Wilinska, M. E. (2004). Nonlinear model predictive control of glucose concentration in subjects with type 1 diabetes. Physiological Measurement, 25(4), 905–920. https://doi.org/10.1088/0967-3334/25/4/010
