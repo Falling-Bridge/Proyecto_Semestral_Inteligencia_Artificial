@@ -2,6 +2,7 @@
 
 - Este proyecto fue probado en Windows con Python; no se garantiza el funcionamiento en otros entornos
 - El informe de este proyecto, tiene el nombre **informe_proyecto.md**
+- Los códigos poseen documentación, por lo tanto no se explica a detalle el funcionamiento de los mismos
 ---
 # Librerías requeridas
 
