@@ -1,1 +1,0 @@
-# Proyecto_Semestral_Inteligencia_Artificial
