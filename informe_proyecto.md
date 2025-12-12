@@ -7,6 +7,7 @@
 - [Descripción función de recompensa](#descripción-función-de-recompensa)
 - [Instrucciones de uso](#instrucciones-de-uso)
 - [Resultados](#resultados)
+- [Conclusiones](#conclusiones)
 
 ---
 
@@ -230,16 +231,33 @@ python plan_insulina_personalizado.py
 
 Al implementar el paso 1 descrito en el ítem anterior, se obtiene algo parecido a la figura 1; se puede observar directamente la base de datos yendo a la dirección ‘Base de datos/db_diabetes_50k.csv’.
 
-**figura1.png**
+**figura 1**
+<img width="1184" height="717" alt="image" src="https://github.com/user-attachments/assets/1d483d19-55be-4ade-8714-4d6199e0d7df" />
 
-Al implementar el paso 2, se obtiene el mejor modelo en la dirección ‘Resultados/best_model/’ teniendo múltiples maneras de ver el archivo (formato.csv, json, .pkl, .nyp) y aparecerá un gráfico como el de la figura 2.
 
-**figura2.png**
+Al implementar el paso 2 se obtienen 2 imágenes, el mejor modelo en la dirección ‘Resultados/best_model/’ teniendo múltiples maneras de ver el archivo (formato.csv, json, .pkl, .nyp) y un resumen de como se desempeñaron los 100 modelos. Figura 3 y 2 respectivamente.
 
-Al implementar el paso 3, el código buscará el modelo en el ítem antes descrito y procederá a ‘administrar’ insulina para llevar a los pacientes al rango de 70-180, quedando con un gráfico como el de la figura 3.
+**figura 2**
+<img width="1280" height="660" alt="Figure_1" src="https://github.com/user-attachments/assets/b1360680-af56-4cc5-8977-5f9ac31d9402" />
 
-**figura3.png**
+**figura 3**
+<img width="601" height="297" alt="image" src="https://github.com/user-attachments/assets/35ad3001-bdc7-4a02-8e97-e48d170fc089" />
 
-Si quiso aplicar la opción para un plan personalizado para un paciente específico, podrá observar gráficos como los de la figura 4.
+Al implementar el paso 3, el código buscará el modelo en el ítem antes descrito y procederá a ‘administrar’ insulina para llevar a los pacientes al rango de 70-180, quedando con un gráfico como el de la figura 4. También proveera un apartado en donde muestra el como se ha desempeñado el modelo, ubicado después de la figura 4
 
-**figura4.png**
+**figura 4**
+<img width="1280" height="660" alt="Figure_1" src="https://github.com/user-attachments/assets/2dc174eb-f4fc-4697-8199-3b00a76c1937" />
+
+| Objetivo Clínico | Meta | Resultado del Modelo | Cumplimiento |
+|------------------|------|----------------------|--------------|
+| **Tiempo en Rango** | >70% | 90.0% | ✅ **CUMPLE** |
+| **Hipoglucemias** | <5% | 0.2% | ✅ **CUMPLE** |
+| **Hiperglucemias** | <25% | 9.8% | ✅ **CUMPLE** |
+
+Si quiso aplicar la opción para un plan personalizado para un paciente específico, podrá observar gráficos como los de la figura 5.
+
+**figura 5**
+<img width="1280" height="660" alt="Figure_1" src="https://github.com/user-attachments/assets/b1b3fe8a-1002-415c-bfa7-828025c49cfc" />
+
+--- 
+# Conclusiones
