@@ -1,4 +1,3 @@
-# simulador_diabetes_rl.py
 import numpy as np
 import random
 
