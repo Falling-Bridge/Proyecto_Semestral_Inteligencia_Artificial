@@ -1,7 +1,7 @@
 # Disclaimer
 
 - Este proyecto fue probado en Windows con Python; no se garantiza el funcionamiento en otros entornos
-- El informe de este proyecto, tiene el nombre **informe_proyecto-Lucas_Morales**
+- El informe de este proyecto, tiene el nombre **informe_proyecto.md**
 ---
 # Librerías requeridas
 
